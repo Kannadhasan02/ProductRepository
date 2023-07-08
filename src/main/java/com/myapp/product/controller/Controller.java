@@ -18,7 +18,7 @@ public class Controller {
 	@Autowired
 	ProductService proSer;
 
-	@PostMapping(value = "/postList")
+	@PostMapping(value = "/postListProduct")
 	public String postList(@RequestBody List<ProductEntity> pe) {
 		return proSer.postList(pe);
 	}
